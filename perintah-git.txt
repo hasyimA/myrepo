@@ -1,0 +1,32 @@
+# Konfigurasi git
+
+git config --global user.name "hasyimA"
+git config --global user.email "hasyim.tampan@gmail.com"
+git config --global code.editor "code --wait"
+git config --global diff.tool "default-difftool"
+
+git config --global difftool.default-difftool.cmd "code --wait --diff \$LOCAL \$REMOTE"
+git config --list --show-origin
+
+# Menggunakan git
+git status
+git add namafile
+git add .
+git commit -m "nama snapshot"
+
+# Melihat semua perubahan
+git show nama-snapshot
+
+git log --oneline
+
+# Membandingkan perubahan
+git diff snapshot1 snapshot2
+
+# Membandingkan perubahan dengan code editor
+git difftool snapshot1 snapshot2
+
+# Memnghapus perubahan
+git clean -f
+
+# Mengembalikan perubahan
+git restore namafile
