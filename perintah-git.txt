@@ -30,3 +30,6 @@ git clean -f
 
 # Mengembalikan perubahan
 git restore namafile
+
+# Mengembalikan perubahan dari staging index
+git restore --staged namafile
